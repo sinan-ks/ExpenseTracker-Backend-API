@@ -1,0 +1,92 @@
+1) ------ API FOR REGISTERING ------
+   url : localhost:8000/api/register/
+   method : post
+   data : {username , email , password}
+   authentication : nill
+   status : completed
+
+2) ------ API FOR EXPENSE ------
+
+    2.1) ------ API FOR LISTING ALL EXPENSE ------
+     url : localhost:8000/api/expenses/
+     method : get
+     data : nill
+     authentication : {username , password}
+     status : completed
+
+    2.2) ------ API FOR ADDING A EXPENSE ------
+     url : localhost:8000/api/expenses/
+     method : post
+     data : {title, amount, category, priority}
+     authentication : {username, password}
+     status : completed
+
+    2.3) ------ API FOR FETCHING A SPECIFIC EXPENSE ------
+     url : localhost:8000/api/expenses/<int:pk>/
+     method : get
+     data : nill
+     authentication : {username, password}
+     status : completed
+
+    2.4) ------ API FOR UPDATING A EXPENSE ------
+     url : localhost:8000/api/expenses/<int:pk>/
+     method : put
+     data : {title, amount, category, priority}
+     authentication : {username, password}
+     status : completed
+
+    2.5) ------ API FOR DELETING A EXPENSE ------
+     url : localhost:8000/api/expenses/<int:pk>/
+     method : delete
+     data : nill
+     authentication : {username, password}
+     status : completed
+
+3) ------ API FOR INCOME ------
+
+    3.1) ------ API FOR LISTING ALL INCOMES ------
+     url : localhost:8000/api/incomes/
+     method : get
+     data : nill
+     authentication : {username, password}
+     status : completed
+
+    3.2) ------ API FOR ADDING A NEW INCOME ------
+     url : localhost:8000/api/incomes/
+     method : post
+     data : {title, amount, category}
+     authentication : {username, password}
+     status : completed
+
+    3.3) ------ API FOR FETCHING A SPECIFIC INCOME ------
+     url : localhost:8000/api/incomes/<int:pk>/
+     method : get
+     data : nill
+     authentication : {username, password}
+     status : completed
+
+    3.4) ------ API FOR UPDATING INCOME ------
+     url : localhost:8000/api/incomes/<int:pk>/
+     method : put
+     data : {title, amount, category}
+     authentication : {username, password}
+     status : completed
+
+    3.5) ------ API FOR DELETING A INCOME ------
+     url : localhost:8000/api/incomes/<int:pk>/
+     method : delete
+     data : nill
+     authentication : {username, password}
+     status : completed
+
+4) ------- API FOR TRANSACTION SUMMARY -------
+
+   url : localhost:8000/api/v1/summary/
+   method : get
+   data : nill
+   authentication : {username, password}
+   response : {"income_tottal" : 1234, "expense_total": 1234}
+   status : completed
+
+    
+
